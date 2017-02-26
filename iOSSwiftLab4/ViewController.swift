@@ -79,14 +79,14 @@ class ViewController: UIViewController {
                 btn2Device55.isHidden = false
                 btn3Device55.isHidden = false
             }
-        } else { //一般來說都是以@2x呈現。
-            btn1Device40.isHidden = true
-            btn2Device40.isHidden = true
-            btn3Device40.isHidden = true
+        } else { //4.0吋螢幕
+            btn1Device40.isHidden = false
+            btn2Device40.isHidden = false
+            btn3Device40.isHidden = false
             
-            btn1Device44.isHidden = false
-            btn2Device44.isHidden = false
-            btn3Device44.isHidden = false
+            btn1Device44.isHidden = true
+            btn2Device44.isHidden = true
+            btn3Device44.isHidden = true
             
             btn1Device55.isHidden = true
             btn2Device55.isHidden = true
