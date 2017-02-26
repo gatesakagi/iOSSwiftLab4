@@ -24,100 +24,100 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let deviceString = platform()
-        let deviceNativeScale = UIScreen.main.nativeScale
-        print("deviceString - \(deviceString), deviceNativeScale - \(deviceNativeScale)")
-        if (deviceString == "iPhone 6" || deviceString == "iPhone 6s" || deviceString == "iPhone 7") {
-            if (deviceNativeScale == 2.343750) { //放大模式
-                btn1Device40.isHidden = false
-                btn2Device40.isHidden = false
-                btn3Device40.isHidden = false
-                
-                btn1Device44.isHidden = true
-                btn2Device44.isHidden = true
-                btn3Device44.isHidden = true
-                
-                btn1Device55.isHidden = true
-                btn2Device55.isHidden = true
-                btn3Device55.isHidden = true
-            } else { //標準模式
-                btn1Device40.isHidden = true
-                btn2Device40.isHidden = true
-                btn3Device40.isHidden = true
-                
-                btn1Device44.isHidden = false
-                btn2Device44.isHidden = false
-                btn3Device44.isHidden = false
-                
-                btn1Device55.isHidden = true
-                btn2Device55.isHidden = true
-                btn3Device55.isHidden = true
-            }
-        } else if (deviceString == "iPhone 6 Plus" || deviceString == "iPhone 6s Plus" || deviceString == "iPhone 7 Plus") {
-            if (deviceNativeScale == 2.88) { //放大模式
-                btn1Device40.isHidden = true
-                btn2Device40.isHidden = true
-                btn3Device40.isHidden = true
-                
-                btn1Device44.isHidden = false
-                btn2Device44.isHidden = false
-                btn3Device44.isHidden = false
-                
-                btn1Device55.isHidden = true
-                btn2Device55.isHidden = true
-                btn3Device55.isHidden = true
-            } else { //標準模式
-                btn1Device40.isHidden = true
-                btn2Device40.isHidden = true
-                btn3Device40.isHidden = true
-                
-                btn1Device44.isHidden = true
-                btn2Device44.isHidden = true
-                btn3Device44.isHidden = true
-                
-                btn1Device55.isHidden = false
-                btn2Device55.isHidden = false
-                btn3Device55.isHidden = false
-            }
-        } else {
-            if (deviceNativeScale == 1) {
-                btn1Device40.isHidden = false
-                btn2Device40.isHidden = false
-                btn3Device40.isHidden = false
-                
-                btn1Device44.isHidden = true
-                btn2Device44.isHidden = true
-                btn3Device44.isHidden = true
-                
-                btn1Device55.isHidden = true
-                btn2Device55.isHidden = true
-                btn3Device55.isHidden = true
-            } else if (deviceNativeScale == 2) {
-                btn1Device40.isHidden = true
-                btn2Device40.isHidden = true
-                btn3Device40.isHidden = true
-                
-                btn1Device44.isHidden = false
-                btn2Device44.isHidden = false
-                btn3Device44.isHidden = false
-                
-                btn1Device55.isHidden = true
-                btn2Device55.isHidden = true
-                btn3Device55.isHidden = true
-            } else if (deviceNativeScale == 3) {
-                btn1Device40.isHidden = true
-                btn2Device40.isHidden = true
-                btn3Device40.isHidden = true
-                
-                btn1Device44.isHidden = true
-                btn2Device44.isHidden = true
-                btn3Device44.isHidden = true
-                
-                btn1Device55.isHidden = false
-                btn2Device55.isHidden = false
-                btn3Device55.isHidden = false
-            }
-        }
+//        let deviceString = platform()
+//        let deviceNativeScale = UIScreen.main.nativeScale
+//        print("deviceString - \(deviceString), deviceNativeScale - \(deviceNativeScale)")
+//        if (deviceString == "iPhone 6" || deviceString == "iPhone 6s" || deviceString == "iPhone 7") {
+//            if (deviceNativeScale == 2.343750) { //放大模式
+//                btn1Device40.isHidden = false
+//                btn2Device40.isHidden = false
+//                btn3Device40.isHidden = false
+//                
+//                btn1Device44.isHidden = true
+//                btn2Device44.isHidden = true
+//                btn3Device44.isHidden = true
+//                
+//                btn1Device55.isHidden = true
+//                btn2Device55.isHidden = true
+//                btn3Device55.isHidden = true
+//            } else { //標準模式
+//                btn1Device40.isHidden = true
+//                btn2Device40.isHidden = true
+//                btn3Device40.isHidden = true
+//                
+//                btn1Device44.isHidden = false
+//                btn2Device44.isHidden = false
+//                btn3Device44.isHidden = false
+//                
+//                btn1Device55.isHidden = true
+//                btn2Device55.isHidden = true
+//                btn3Device55.isHidden = true
+//            }
+//        } else if (deviceString == "iPhone 6 Plus" || deviceString == "iPhone 6s Plus" || deviceString == "iPhone 7 Plus") {
+//            if (deviceNativeScale == 2.88) { //放大模式
+//                btn1Device40.isHidden = true
+//                btn2Device40.isHidden = true
+//                btn3Device40.isHidden = true
+//                
+//                btn1Device44.isHidden = false
+//                btn2Device44.isHidden = false
+//                btn3Device44.isHidden = false
+//                
+//                btn1Device55.isHidden = true
+//                btn2Device55.isHidden = true
+//                btn3Device55.isHidden = true
+//            } else { //標準模式
+//                btn1Device40.isHidden = true
+//                btn2Device40.isHidden = true
+//                btn3Device40.isHidden = true
+//                
+//                btn1Device44.isHidden = true
+//                btn2Device44.isHidden = true
+//                btn3Device44.isHidden = true
+//                
+//                btn1Device55.isHidden = false
+//                btn2Device55.isHidden = false
+//                btn3Device55.isHidden = false
+//            }
+//        } else {
+//            if (deviceNativeScale == 1) {
+//                btn1Device40.isHidden = false
+//                btn2Device40.isHidden = false
+//                btn3Device40.isHidden = false
+//                
+//                btn1Device44.isHidden = true
+//                btn2Device44.isHidden = true
+//                btn3Device44.isHidden = true
+//                
+//                btn1Device55.isHidden = true
+//                btn2Device55.isHidden = true
+//                btn3Device55.isHidden = true
+//            } else if (deviceNativeScale == 2) {
+//                btn1Device40.isHidden = true
+//                btn2Device40.isHidden = true
+//                btn3Device40.isHidden = true
+//                
+//                btn1Device44.isHidden = false
+//                btn2Device44.isHidden = false
+//                btn3Device44.isHidden = false
+//                
+//                btn1Device55.isHidden = true
+//                btn2Device55.isHidden = true
+//                btn3Device55.isHidden = true
+//            } else if (deviceNativeScale == 3) {
+//                btn1Device40.isHidden = true
+//                btn2Device40.isHidden = true
+//                btn3Device40.isHidden = true
+//                
+//                btn1Device44.isHidden = true
+//                btn2Device44.isHidden = true
+//                btn3Device44.isHidden = true
+//                
+//                btn1Device55.isHidden = false
+//                btn2Device55.isHidden = false
+//                btn3Device55.isHidden = false
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {
